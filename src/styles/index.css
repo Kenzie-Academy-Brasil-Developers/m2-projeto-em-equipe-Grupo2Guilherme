@@ -2,23 +2,29 @@ body
 {
     color: var(--grey3);
     background: var(--grey4);
-    background-image: url(../assets/Background.png);
     background-repeat: no-repeat;
     line-height: 45px;
-    width: 1920px;
-    height: 1080px;
-    border: 10px solid red;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
+.bg
+{
+    width: 100%;
 }
 
 header
 {
     width: 100%;
     opacity: 40%;
+    opacity: 70%;
+    position: fixed;
 }
 
 nav
 {
-    width: 90%;
+    width: 100%;
     height: 80px;
     display: flex;
     align-items: center;
@@ -32,6 +38,23 @@ nav a
     cursor: pointer;
 }
 
+input
+{
+    width: 400px;
+    height: 40px;
+    position: relative;
+    left: 20rem;
+    border: none;
+    border-radius: 8px;
+    background: var(--grey5);
+    color: var(--grey4);
+}
+
+nav img
+{
+    position: relative;
+    left: 18rem;
+}
 
 h2
 {
@@ -49,14 +72,6 @@ h3
     font-size: 1rem;
 }
 
-main{
-    border: 10px solid blue;
-}
-
-.home1{
-    border: 10px solid green;
-}
-
 .home2
 {
     width: 100%;
@@ -64,16 +79,14 @@ main{
     background: var(--grey4);
     display: flex;
     flex-wrap: wrap;
-    border: 10px solid yellow;
 }
 
 .home3
 {
-    margin: 450px 0;
+    margin: 50px 0;
     background-image: url(../assets/Background1.png);
     width: 100%;
     height: 100%;
-    border: 10px solid palevioletred;
 }
 
 .line
@@ -115,6 +128,7 @@ main{
     color: var(--grey2);
     font-size: 1.5rem;
     font-weight: 500;
+    margin: 0 30px;
 }
 
 span
@@ -131,7 +145,7 @@ span
 
 .trocaPagina
 {
-    margin: 430px 0 0 0;
+    margin: -350px 0 0 0;
 }
 
 .mouse1, .mouse3
@@ -203,4 +217,161 @@ a
     from{transform: translateY(-15px);}
     50%{transform: translateY(0);}
     to{transform: translateY(-15px);}
+}
+
+
+@media(min-width: 1300px)
+{
+    input
+    {
+        left: 25rem;
+    }
+    
+    nav img
+    {
+        left: 23rem;
+    } 
+}
+
+@media(min-width: 1350px)
+{
+    input
+    {
+        left: 30rem;
+    }
+    
+    nav img
+    {
+        left: 28rem;
+    } 
+}
+
+@media(min-width: 1400px)
+{
+    input
+    {
+        left: 32rem;
+    }
+    
+    nav img
+    {
+        left: 30rem;
+    } 
+}
+
+@media(min-width: 1450px)
+{
+    input
+    {
+        left: 35rem;
+    }
+    
+    nav img
+    {
+        left: 32rem;
+    } 
+}
+
+@media(min-width: 1500px)
+{
+    input
+    {
+        left: 40rem;
+    }
+    
+    nav img
+    {
+        left: 38rem;
+    } 
+}
+
+@media(min-width: 1600px)
+{
+    input
+    {
+        left: 45rem;
+    }
+    
+    nav img
+    {
+        left: 43rem;
+    } 
+}
+
+@media(min-width: 1650px)
+{
+    input
+    {
+        left: 50rem;
+    }
+    
+    nav img
+    {
+        left: 48rem;
+    } 
+}
+
+@media(min-width: 1750px)
+{
+    input
+    {
+        left: 55rem;
+    }
+    
+    nav img
+    {
+        left: 53rem;
+    } 
+}
+
+@media(min-width: 1850px)
+{
+    input
+    {
+        left: 60rem;
+    }
+    
+    nav img
+    {
+        left: 58rem;
+    } 
+}
+
+@media(min-width: 1950px)
+{
+    input
+    {
+        left: 65rem;
+    }
+    
+    nav img
+    {
+        left: 63rem;
+    } 
+}
+
+@media(min-width: 2050px)
+{
+    input
+    {
+        left: 70rem;
+    }
+    
+    nav img
+    {
+        left: 68rem;
+    } 
+}
+
+@media(min-width: 2150px)
+{
+    input
+    {
+        left: 75rem;
+    }
+    
+    nav img
+    {
+        left: 73rem;
+    } 
 }
