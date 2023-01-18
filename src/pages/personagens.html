@@ -11,10 +11,18 @@
 </head>
 <body>
     <header>
-        <nav>
-            <a href="../../index.html">Home</a>
-            <a href="./personagens.html">Personagens</a>
-            <a href="./devs.html">Dev's</a>
+
+        <nav class="nav">
+            <ul class="nav__itens">
+                <ul class="links">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="./personagens.html" class="selecionado">Personagens</a></li>
+                    <li><a href="./devs.html">Dev's</a></li>
+                </ul>
+            </ul>
+            <input type="text" placeholder="Procure um personagem">
+            <img src="../assets/lupa 1.png" alt="">
+
         </nav>
         <form id="searchDiv">
             <input class="searchInput" type="text" placeholder="Procure um personagem">
@@ -22,6 +30,13 @@
         </form>
             
     </header>
+    <!-- <div class="error">
+        <h1>WUBBA LUBBA DUB BUB!</h1>
+        <img src="../assets/rick404.png" alt="">
+        <h1>4</h1>
+        <h1>4</h1>
+        <span>O personagem que você procura está desaparecido! :O</span>
+    </div> -->
     <main>
         <div>
             <h1 class="nome">Nome</h1>
