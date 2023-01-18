@@ -1,14 +1,12 @@
 body
 {
-
-    color: var(--color-3);
-    background: var(--color-4);
-    background-image: url(../assets/Background.png);
-
-    background-repeat: no-repeat;
-    line-height: 45px;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
 }
 
 .bg
@@ -16,50 +14,50 @@ body
     width: 100%;
 }
 
-header
-{
-    width: 100%;
-    opacity: 70%;
-}
-
-nav
-{
-    width: 100%;
+.nav {
+    width: 100vw;
     height: 80px;
+
+    padding: 1rem 2.5rem;
+
     display: flex;
     align-items: center;
-    background: var(--color-4);
+
+    background-color: #001507B2;
 }
 
-nav a
-{
-    color: var(--color-2);
-    margin: 20px;
-    cursor: pointer;
+.nav__itens {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-input
-{
-    width: 400px;
-    height: 40px;
-    position: relative;
-    left: 20rem;
-    border: none;
-    border-radius: 8px;
-    background: var(--color-5);
-    color: var(--color-4);
+.links {
+    display: flex;
+    gap: 2rem;
 }
 
-nav img
-{
-    position: relative;
-    left: 18rem;
+.links a {
+    font-size: 24px;
+    font-weight: 500;
+
+    color: var(--color-3);
+
+    transition: 0.5s ease-in-out
+}
+
+.links a:hover {
+    color: var(--color-1);
+}
+
+.selecionado {
+    color: var(--color-1) !important;
 }
 
 h2
 {
     color: var(--color-2);
-    margin-top: -80px;
+    margin-top: -85px;
     margin-left: 30px;
     font-size: 1rem;
 }
@@ -67,7 +65,7 @@ h2
 h3
 {
     color: var(--color-2);
-    margin-top: -20px;
+    margin-top: 10px;
     margin-left: 30px;
     font-size: 1rem;
 }
@@ -107,6 +105,7 @@ h3
 {
     display: flex;
     flex-wrap: nowrap;
+    margin: -90px 0;
 }
 
 .descRick img
@@ -120,7 +119,7 @@ h3
     color: var(--color-2);
     font-size: 1.5rem;
     font-weight: 500;
-    margin: 0 30px;
+    margin: 0 40px 0 0;
 }
 
 span
