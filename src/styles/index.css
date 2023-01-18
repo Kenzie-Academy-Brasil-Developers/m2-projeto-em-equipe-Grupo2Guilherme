@@ -1,7 +1,7 @@
 body
 {
-    color: var(--grey3);
-    background: var(--grey4);
+    color: var(--color-3);
+    background: var(--color-4);
     background-image: url(../assets/Background.png);
     background-repeat: no-repeat;
     line-height: 45px;
@@ -21,12 +21,12 @@ nav
     height: 80px;
     display: flex;
     align-items: center;
-    background: var(--grey4);
+    background: var(--color-4);
 }
 
 nav a
 {
-    color: var(--grey2);
+    color: var(--color-2);
     margin: 20px;
     cursor: pointer;
 }
@@ -39,8 +39,8 @@ input
     left: 450px;
     border: none;
     border-radius: 8px;
-    background: var(--grey5);
-    color: var(--grey4);
+    background: var(--color-5);
+    color: var(--color-4);
 }
 
 nav img
@@ -51,7 +51,7 @@ nav img
 
 h2
 {
-    color: var(--grey2);
+    color: var(--color-2);
     margin-top: -80px;
     margin-left: 30px;
     font-size: 1rem;
@@ -59,7 +59,7 @@ h2
 
 h3
 {
-    color: var(--grey2);
+    color: var(--color-2);
     margin-top: -20px;
     margin-left: 30px;
     font-size: 1rem;
@@ -68,8 +68,8 @@ h3
 .home2
 {
     width: 100%;
-    color: var(--grey3);
-    background: var(--grey4);
+    color: var(--color-3);
+    background: var(--color-4);
     display: flex;
     flex-wrap: wrap;
 }
@@ -82,7 +82,7 @@ h3
 
 .titulo2
 {
-    color: var(--grey2);
+    color: var(--color-2);
     margin-top: 20px;
     margin-left: 20px;
     font-size: 1rem;
@@ -90,7 +90,7 @@ h3
 
 .titulo3
 {
-    color: var(--grey2);
+    color: var(--color-2);
     margin-top: 50px;
     margin-left: -55px;
     font-size: 1rem;
@@ -110,14 +110,14 @@ h3
 .descricao
 {
     height: 100%;
-    color: var(--grey2);
+    color: var(--color-2);
     font-size: 1.5rem;
     font-weight: 500;
 }
 
 span
 {
-    color: var(--grey1);
+    color: var(--color-1);
 }
 
 .home3
@@ -137,7 +137,7 @@ span
 
 .trailerDesc
 {
-    color: var(--grey2);
+    color: var(--color-2);
     margin-top: -470px;
     margin-left: 30px;
     font-size: 1rem;
@@ -181,7 +181,7 @@ span
 
 a
 {
-    color: var(--grey2);
+    color: var(--color-2);
     cursor: pointer;
     font-size: 1.5rem;
     padding: 10px;
