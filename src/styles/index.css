@@ -5,19 +5,19 @@ body
     background-image: url(../assets/Background.png);
     background-repeat: no-repeat;
     line-height: 45px;
-    width: 100%;
-    height: 100%;
+    width: 1290px;
+    height: 1250px;
 }
 
 header
 {
-    width: 100%;
+    width: 90%;
     opacity: 70%;
 }
 
 nav
 {
-    width: 100%;
+    width: 90%;
     height: 80px;
     display: flex;
     align-items: center;
@@ -49,11 +49,6 @@ nav img
     left: 410px;
 }
 
-main
-{
-    height: 100%;
-}
-
 h2
 {
     color: var(--grey2);
@@ -73,12 +68,8 @@ h3
 .home2
 {
     width: 100%;
-    /* height: 100%; */
     color: var(--grey3);
     background: var(--grey4);
-    background-image: url(../assets/rickAndMorty\ 1.png);
-    background-repeat: no-repeat;
-    margin: 50px 0;
     display: flex;
     flex-wrap: wrap;
 }
@@ -105,13 +96,23 @@ h3
     font-size: 1rem;
 }
 
+.descRick
+{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.descRick img
+{
+    margin: -140px 0;
+}
+
 .descricao
 {
     height: 100%;
     color: var(--grey2);
     font-size: 1.5rem;
     font-weight: 500;
-    margin: 250px 50px 0 700px;
 }
 
 span
@@ -122,6 +123,9 @@ span
 .home3
 {
     margin: 450px 0;
+    background-image: url(../assets/Background1.png);
+    width: 100%;
+    height: 100%;
 }
 
 .line2
@@ -142,18 +146,37 @@ span
 .trailer
 {
    position: relative;
-   top: 60px;
+   top: 40px;
    left: 25%;
 }
 
 .trocaPagina
 {
-    margin: 500px 0 0 0;
+    margin: 430px 0 0 0;
+}
+
+.mouse1, .mouse3
+{
+    margin: -650px 0 0 450px;
+    animation: jumping 1s linear infinite;
+    cursor: pointer;
+}
+
+.mouse2
+{
+    margin: 10px 0 0 450px;
+    animation: jumping 1s linear infinite;
+    cursor: pointer; 
+}
+
+.trocaPag
+{
+    margin: -55px 0 0 0;
 }
 
 .trocarPagina
 {
-    margin: -350px 0;
+    margin: 50px 0;
 }
 
 a
@@ -162,4 +185,38 @@ a
     cursor: pointer;
     font-size: 1.5rem;
     padding: 10px;
+}
+
+[data-anime]
+{
+    opacity: 0;
+    transition: 1s;
+}
+
+[data-anime="right"]
+{
+    transform: translate3d(50px, 0, 0);
+}
+
+[data-anime="up"]
+{
+    transform: translate3d(0, 100%, 0);
+}
+
+[data-anime="left"]
+{
+    transform: translate3d(-100%, 0, 0);
+}
+
+[data-anime].animate
+{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+@keyframes jumping
+{
+    from{transform: translateY(-15px);}
+    50%{transform: translateY(0);}
+    to{transform: translateY(-15px);}
 }
