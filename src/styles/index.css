@@ -1,12 +1,19 @@
 body
 {
-    color: var(--grey3);
-    background: var(--grey4);
+
+    color: var(--color-3);
+    background: var(--color-4);
     background-image: url(../assets/Background.png);
+
     background-repeat: no-repeat;
     line-height: 45px;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+}
+
+.bg
+{
+    width: 100%;
 }
 
 header
@@ -21,12 +28,12 @@ nav
     height: 80px;
     display: flex;
     align-items: center;
-    background: var(--grey4);
+    background: var(--color-4);
 }
 
 nav a
 {
-    color: var(--grey2);
+    color: var(--color-2);
     margin: 20px;
     cursor: pointer;
 }
@@ -36,27 +43,22 @@ input
     width: 400px;
     height: 40px;
     position: relative;
-    left: 450px;
+    left: 20rem;
     border: none;
     border-radius: 8px;
-    background: var(--grey5);
-    color: var(--grey4);
+    background: var(--color-5);
+    color: var(--color-4);
 }
 
 nav img
 {
     position: relative;
-    left: 410px;
-}
-
-main
-{
-    height: 100%;
+    left: 18rem;
 }
 
 h2
 {
-    color: var(--grey2);
+    color: var(--color-2);
     margin-top: -80px;
     margin-left: 30px;
     font-size: 1rem;
@@ -64,7 +66,7 @@ h2
 
 h3
 {
-    color: var(--grey2);
+    color: var(--color-2);
     margin-top: -20px;
     margin-left: 30px;
     font-size: 1rem;
@@ -73,12 +75,8 @@ h3
 .home2
 {
     width: 100%;
-    /* height: 100%; */
-    color: var(--grey3);
-    background: var(--grey4);
-    background-image: url(../assets/rickAndMorty\ 1.png);
-    background-repeat: no-repeat;
-    margin: 50px 0;
+    color: var(--color-3);
+    background: var(--color-4);
     display: flex;
     flex-wrap: wrap;
 }
@@ -91,7 +89,7 @@ h3
 
 .titulo2
 {
-    color: var(--grey2);
+    color: var(--color-2);
     margin-top: 20px;
     margin-left: 20px;
     font-size: 1rem;
@@ -99,29 +97,43 @@ h3
 
 .titulo3
 {
-    color: var(--grey2);
+    color: var(--color-2);
     margin-top: 50px;
     margin-left: -55px;
     font-size: 1rem;
 }
 
+.descRick
+{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.descRick img
+{
+    margin: -140px 0;
+}
+
 .descricao
 {
     height: 100%;
-    color: var(--grey2);
+    color: var(--color-2);
     font-size: 1.5rem;
     font-weight: 500;
-    margin: 250px 50px 0 700px;
+    margin: 0 30px;
 }
 
 span
 {
-    color: var(--grey1);
+    color: var(--color-1);
 }
 
 .home3
 {
     margin: 450px 0;
+    background-image: url(../assets/Background1.png);
+    width: 100%;
+    height: 100%;
 }
 
 .line2
@@ -133,7 +145,7 @@ span
 
 .trailerDesc
 {
-    color: var(--grey2);
+    color: var(--color-2);
     margin-top: -470px;
     margin-left: 30px;
     font-size: 1rem;
@@ -142,24 +154,234 @@ span
 .trailer
 {
    position: relative;
-   top: 60px;
+   top: 40px;
    left: 25%;
 }
 
 .trocaPagina
 {
-    margin: 500px 0 0 0;
+    margin: -350px 0 0 0;
+}
+
+.mouse1, .mouse3
+{
+    margin: -650px 0 0 450px;
+    animation: jumping 1s linear infinite;
+    cursor: pointer;
+}
+
+.mouse2
+{
+    margin: 10px 0 0 450px;
+    animation: jumping 1s linear infinite;
+    cursor: pointer; 
+}
+
+.trocaPag
+{
+    margin: -55px 0 0 0;
 }
 
 .trocarPagina
 {
-    margin: -350px 0;
+    margin: 50px 0;
 }
 
 a
 {
-    color: var(--grey2);
+    color: var(--color-2);
     cursor: pointer;
     font-size: 1.5rem;
     padding: 10px;
+}
+
+[data-anime]
+{
+    opacity: 0;
+    transition: 1s;
+}
+
+[data-anime="right"]
+{
+    transform: translate3d(50px, 0, 0);
+}
+
+[data-anime="up"]
+{
+    transform: translate3d(0, 100%, 0);
+}
+
+[data-anime="left"]
+{
+    transform: translate3d(-100%, 0, 0);
+}
+
+[data-anime].animate
+{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+@keyframes jumping
+{
+    from{transform: translateY(-15px);}
+    50%{transform: translateY(0);}
+    to{transform: translateY(-15px);}
+}
+
+
+@media(min-width: 1300px)
+{
+    input
+    {
+        left: 25rem;
+    }
+    
+    nav img
+    {
+        left: 23rem;
+    } 
+}
+
+@media(min-width: 1350px)
+{
+    input
+    {
+        left: 30rem;
+    }
+    
+    nav img
+    {
+        left: 28rem;
+    } 
+}
+
+@media(min-width: 1400px)
+{
+    input
+    {
+        left: 32rem;
+    }
+    
+    nav img
+    {
+        left: 30rem;
+    } 
+}
+
+@media(min-width: 1450px)
+{
+    input
+    {
+        left: 35rem;
+    }
+    
+    nav img
+    {
+        left: 32rem;
+    } 
+}
+
+@media(min-width: 1500px)
+{
+    input
+    {
+        left: 40rem;
+    }
+    
+    nav img
+    {
+        left: 38rem;
+    } 
+}
+
+@media(min-width: 1600px)
+{
+    input
+    {
+        left: 45rem;
+    }
+    
+    nav img
+    {
+        left: 43rem;
+    } 
+}
+
+@media(min-width: 1650px)
+{
+    input
+    {
+        left: 50rem;
+    }
+    
+    nav img
+    {
+        left: 48rem;
+    } 
+}
+
+@media(min-width: 1750px)
+{
+    input
+    {
+        left: 55rem;
+    }
+    
+    nav img
+    {
+        left: 53rem;
+    } 
+}
+
+@media(min-width: 1850px)
+{
+    input
+    {
+        left: 60rem;
+    }
+    
+    nav img
+    {
+        left: 58rem;
+    } 
+}
+
+@media(min-width: 1950px)
+{
+    input
+    {
+        left: 65rem;
+    }
+    
+    nav img
+    {
+        left: 63rem;
+    } 
+}
+
+@media(min-width: 2050px)
+{
+    input
+    {
+        left: 70rem;
+    }
+    
+    nav img
+    {
+        left: 68rem;
+    } 
+}
+
+@media(min-width: 2150px)
+{
+    input
+    {
+        left: 75rem;
+    }
+    
+    nav img
+    {
+        left: 73rem;
+    } 
 }

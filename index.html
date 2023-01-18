@@ -10,6 +10,7 @@
     <title>Rick and morty</title>
 </head>
 <body>
+    
     <header>
         <nav>
             <a href="/index.html">Home</a>
@@ -18,44 +19,57 @@
             <input type="text" placeholder="Procure um personagem">
             <img src="./src/assets/lupa 1.png" alt="">
         </nav>
+        <!-- <img class="bg" src="./src/assets/Background.png" alt=""> -->
     </header>
+    <div class="error">
+        <h1>WUBBA LUBBA DUB BUB!</h1>
+        <img src="./src/assets/rick404.png" alt="">
+        <h1>4</h1>
+        <h1>4</h1>
+        <span>O personagem que você procura está desaparecido! :O</span>
+    </div>
     <main>
         <img src="./src/assets/Line 2.png" alt="">
         <h2>Bem vindo a</h2>
         <h3>Página do Rick and Morty</h3>
-        <!-- <img src="./src/assets/Background.png" alt=""> -->
+        <img class="bg" src="./src/assets/Background.png" alt="">
         <div class="trocaPagina">
             <a href="./index.html">01</a>
-            <a href="">02</a>
-            <a href="">03</a>
+            <a href="#home2">02</a>
+            <a href="#home3">03</a>
+            <a href="#home2"><img class="mouse1 btn" src="./src/assets/Mouse Icon.png" alt=""></a>
         </div>
-        <div class="home2">
+        <div class="home2" id="home2" data-anime="right">
             <img class="line" src="./src/assets/Line 2.png" alt="">
             <h2 class="titulo2">O que é</h2>
             <h3 class="titulo3">Rick and Morty?</h3>
             <div class="descRick">
+                <img src="./src/assets/rickAndMorty 1.png" alt="">
                 <p class="descricao">
                     A trama gira em torno das aventuras perigosas de
                     <span>Rick, um cientista gênio alcoólatra</span>, e <span>Morty, seu neto aparentemente ingênuo</span>, que graças as viagens interdimensionais com seu avô começa a perceber o quão complexo o mundo a sua volta pode ser e o quão desastrosas as relações de causa e efeito podem ficar.
                 </p>
             </div> 
+            <div class="trocaPag">
+                <a href="./index.html">01</a>
+                <a href="#home2">02</a>
+                <a href="#home3">03</a>
+                <a href="#home3"><img class="mouse2" src="./src/assets/Mouse Icon.png" alt=""></a>
+            </div>
         </div>
-        <div>
-            <a href="./index.html">01</a>
-            <a href="">02</a>
-            <a href="">03</a>
-        </div>
-        <div class="home3">
+        <div class="home3" id="home3" data-anime="left">
             <img class="line2" src="./src/assets/Line 2.png" alt="">
             <h2 class="trailerDesc">Trailer Oficial</h2>
             <h3>Rick and Morty</h3>
             <img class="trailer" src="./src/assets/image 1.png" alt="">  
-        </div>
-        <div class="trocarPagina">
-            <a href="./index.html">01</a>
-            <a href="">02</a>
-            <a href="">03</a>
+            <div class="trocarPagina">
+                <a href="./index.html">01</a>
+                <a href="#home2">02</a>
+                <a href="#home3">03</a>
+                <a href="./index.html"><img class="mouse3" src="./src/assets/voltar.png" alt=""></a>
+            </div>
         </div>
     </main>
+    <script src="./src/scripts/animacoes.js"></script>
 </body>
 </html>
