@@ -132,6 +132,22 @@ div
     margin: 100px 0 0 0;
 }
 
+
+.left{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    border: 10px solid red;
+}
+
+.rigth{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    border: 10px solid red;
+
+}
+
 .loadDiv{
     min-height: 450px;
     display: flex;
@@ -150,6 +166,7 @@ div
 		transform: rotate(360deg);
 	}
 }
+
 
 
 
