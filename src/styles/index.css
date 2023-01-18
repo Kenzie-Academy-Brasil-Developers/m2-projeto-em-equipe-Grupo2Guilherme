@@ -1,18 +1,19 @@
 body
 {
-    color: var(--grey3);
-    background: var(--grey4);
-    /* background-image: url(../assets/Background.png); */
-    background-repeat: no-repeat;
-    line-height: 45px;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
 }
 
 .bg
 {
     width: 100%;
 }
+
 
 nav
 {
@@ -22,45 +23,60 @@ nav
     align-items: center;
     background: #001507B2;
 
+=======
+.nav {
+    width: 100vw;
+    height: 80px;
+
+    padding: 1rem 2.5rem;
+
+    display: flex;
+    align-items: center;
+
+    background-color: #001507B2;
 }
 
-nav a
-{
-    color: var(--grey2);
-    margin: 20px;
-    cursor: pointer;
+.nav__itens {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 }
 
-input
-{
-    width: 400px;
-    height: 40px;
-    position: relative;
-    left: 20rem;
-    border: none;
-    border-radius: 8px;
-    background: var(--grey5);
-    color: var(--grey4);
+.links {
+    display: flex;
+    gap: 2rem;
 }
 
-nav img
-{
-    position: relative;
-    left: 18rem;
+.links a {
+    font-size: 24px;
+    font-weight: 500;
+
+    color: var(--color-3);
+
+    transition: 0.5s ease-in-out
+}
+
+.links a:hover {
+    color: var(--color-1);
+}
+
+.selecionado {
+    color: var(--color-1) !important;
 }
 
 h2
 {
-    color: var(--grey2);
-    margin-top: -80px;
+    color: var(--color-2);
+    margin-top: -85px;
     margin-left: 30px;
     font-size: 1rem;
 }
 
 h3
 {
-    color: var(--grey2);
-    margin-top: -20px;
+    color: var(--color-2);
+    margin-top: 10px;
     margin-left: 30px;
     font-size: 1rem;
 }
@@ -68,8 +84,8 @@ h3
 .home2
 {
     width: 100%;
-    color: var(--grey3);
-    background: var(--grey4);
+    color: var(--color-3);
+    background: var(--color-4);
     display: flex;
     flex-wrap: wrap;
 }
@@ -82,7 +98,7 @@ h3
 
 .titulo2
 {
-    color: var(--grey2);
+    color: var(--color-2);
     margin-top: 20px;
     margin-left: 20px;
     font-size: 1rem;
@@ -90,7 +106,7 @@ h3
 
 .titulo3
 {
-    color: var(--grey2);
+    color: var(--color-2);
     margin-top: 50px;
     margin-left: -55px;
     font-size: 1rem;
@@ -100,6 +116,7 @@ h3
 {
     display: flex;
     flex-wrap: nowrap;
+    margin: -90px 0;
 }
 
 .descRick img
@@ -110,15 +127,15 @@ h3
 .descricao
 {
     height: 100%;
-    color: var(--grey2);
+    color: var(--color-2);
     font-size: 1.5rem;
     font-weight: 500;
-    margin: 0 30px;
+    margin: 0 40px 0 0;
 }
 
 span
 {
-    color: var(--grey1);
+    color: var(--color-1);
 }
 
 .home3
@@ -138,7 +155,7 @@ span
 
 .trailerDesc
 {
-    color: var(--grey2);
+    color: var(--color-2);
     margin-top: -470px;
     margin-left: 30px;
     font-size: 1rem;
@@ -182,11 +199,12 @@ span
 
 a
 {
-    color: var(--grey2);
+    color: var(--color-2);
     cursor: pointer;
     font-size: 1.5rem;
     padding: 10px;
 }
+
 
 [data-anime]
 {
@@ -378,3 +396,4 @@ a
         left: 73rem;
     } 
 }
+
