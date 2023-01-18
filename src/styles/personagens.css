@@ -171,3 +171,20 @@ div
 		transform: rotate(360deg);
 	}
 }
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;
+}
+
+#voltar{
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: #CCFF00;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
