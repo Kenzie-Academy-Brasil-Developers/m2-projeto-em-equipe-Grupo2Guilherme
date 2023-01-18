@@ -2,21 +2,33 @@ import { personagemAPI } from "./requestsSearch.js";
 
 
 async function renderPersonsPesquisa () {
-
-    const main  = document.querySelector('main')
-    const input = document.querySelector('.searchInput')
-    const form = document.getElementById('searchDiv')
+ 
+    const main    = document.querySelector('main')
+    const input   = document.querySelector('.searchInput')
+    const footer  = document.querySelector('footer')
+    const form    = document.getElementById('searchDiv')
 
     const imgLoad = document.createElement('img')
     const loadDiv = document.createElement('div')
 
     imgLoad.src = "../assets/loading 1.png"
     loadDiv.className = "loadDiv"
+
+    const voltar = document.createElement('button')
+
+    voltar.id = 'voltar'
+    voltar.innerText = 'Voltar para um lugar seguro'
+
+    voltar.addEventListener('click', () => {
+        window.location.replace('/src/pages/personagens.html')
+    })
     
     form.addEventListener('submit', async (e) => {
         e.preventDefault()
 
         main.innerHTML = ''
+
+        footer.appendChild(voltar)
         
         loadDiv.appendChild(imgLoad)
         main.appendChild(loadDiv)
