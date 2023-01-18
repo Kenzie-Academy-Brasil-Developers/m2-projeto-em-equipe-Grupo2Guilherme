@@ -1,7 +1,7 @@
 body
 {
     width: 100%;
-    background: var(--grey4);
+    background: var(--color-4);
 }
 
 body img
@@ -14,8 +14,8 @@ body img
 {
     width: 352px;
     height: 56px;
-    background: var(--grey1);
-    color: var(--grey4);
+    background: var(--color-1);
+    color: var(--color-4);
     border-radius: 15px;
     border: none;
     cursor: pointer;
