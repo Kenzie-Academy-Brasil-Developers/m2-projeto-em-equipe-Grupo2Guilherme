@@ -249,12 +249,69 @@ a
 
 
 @media(max-width: 1024px)
-{
+{   
+    body{
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    header{
+        width: 50%;
+        position: fixed;
+    }
+
     .home1{
         width: 1000px;
         height: 100vh;
         background-size: 1050px 900px;
     } 
+
+    .trocaPagina{
+        margin-top: 600px;
+    }
+
+    .mouseAni{
+        margin-left: -100px;
+    }
+
+    .home2{
+        width: 970px;
+        height: 1050px;
+    }
+
+    .descRick{
+        display: flex;
+    }
+
+    .descRick > p{
+        font-size: small;
+        width: 200px;
+        height: 100px;
+        margin-bottom: 600px;
+
+    }
+
+    .trocaPages2{
+        margin-bottom: 500px;
+    }
+
+    .home3{
+        border: 10px solid red;
+        width: 970px;
+        height: 1050px;   
+    }
+
+    .trailer{
+        position: relative;
+        width: 700px;
+        height: 400px;
+        top: 100px;
+        left: 13%;
+    }
+
+    
 }
 
 @media(max-width: 768px)
@@ -262,8 +319,7 @@ a
     .home1{
         width: 950px;
         height: 100%;
-        background-image: url("../assets/bg\ dev.png");
-        border: 10px solid red;
+        background-image: url("../assets/Background.jpg");
     }  
 }
 
@@ -272,8 +328,7 @@ a
     .home1{
         width: 900px;
         height: 100%;
-        background-image: url("../assets/bg\ dev.png");
-        border: 10px solid red;
+        background-image: url("../assets/Background.jpg");
     } 
 }
 
@@ -282,7 +337,6 @@ a
     .home1{
         width: 900px;
         height: 100%;
-        background-image: url("../assets/bg\ dev.png");
-        border: 10px solid red;
+        background-image: url("../assets/Background.jpg");
     } 
 }
