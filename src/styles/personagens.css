@@ -1,23 +1,25 @@
 body {
-
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: black;
-    overflow: hidden;
+    /* overflow: hidden; */
+}
 
+header
+{
+    width: 100%;
 }
 
 .nav {
-    width: 100vw;
-    height: 100px;
-
-    padding: 1rem 2.5rem;
-
+    width: 100%;
+    height: 120px;
+    padding: 1rem 2.5rem 1rem 0;
     display: flex;
     align-items: center;
-
     background-color: #011808;
+    justify-content: center;
 }
 
 .nav__itens {
@@ -28,11 +30,12 @@ body {
 
 .links {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
+    padding-left: 30px;
 }
 
 .links a {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 500;
 
     color: var(--color-3);
@@ -53,15 +56,15 @@ body {
     display: flex;
     flex-direction: row;
     background: var(--grey5);
-    height: 40px;
+    height: 2rem;
     border-radius: 8px;
-    margin: auto;
-    margin-right: 20px;
+    margin-left: -300px;
+    margin-top: 70px;
 }
 
 .searchInput
 {
-    width: 400px;
+    width: 16rem;
     height: 40px;
     border: none;
     border-radius: 8px 0px 0px 8px;
@@ -69,7 +72,6 @@ body {
     outline: none;
     background: var(--color-5);
     color: var(--color-4);
-    
 }
 
 .searchBtn
@@ -93,21 +95,22 @@ div
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: -10px;
 }
 
 .bg
 {
-    margin: -350px;
+    width: 18rem;
+    height: 30rem;
+    margin: -340px auto;
     border-radius: 16px;
 }
 
 .dev
 {
-    width: 278px;
-    height: 278px;
+    width: 10rem;
+    height: 10rem;
     border-radius: 200px;
-    margin: -90px auto;
+    margin: -100px 0;
 }
 
 .nome
@@ -115,7 +118,8 @@ div
     color: var(--color-3);
     font-size: 2.2rem;
     font-weight: 900;
-    margin: 190px 0 0 -455px;
+    margin-top: 190px;
+    margin-right: 260px;
     transform: rotate(270deg);
 }
 
@@ -124,7 +128,8 @@ div
     color: var(--color-3);
     font-size: 2.2rem;
     font-weight: 900;
-    margin: 10px 0 0 455px;
+    margin-top: 10px;
+    margin-left: 255px;
     transform: rotate(-270deg);
 }
 
@@ -143,39 +148,10 @@ div
     margin: 10px 0 0 0;
 }
 
-
-/* .left{
-    width: 30px;
-    height: 30px;
-    background-color: #E4FFEA80;
-    border-radius: 50px;
-    border: none;
-    position: relative;
-    left: -250px;
-    top: -30px;
-    cursor: pointer;
-}
-
-.rigth{
-    width: 70px;
-    height: 70px;
-    background-color: var(--color-1);
-    border-radius: 50px;
-    border: none;
-    position: relative;
-    right: -590px;
-    top: -450px;
-    cursor: pointer;
-} */
-
 #figure{
-    min-width: 555px;
-    max-width: 555px;
+    min-width: 34rem;
+    max-width: 34rem;
 }
-
-/* .cardRender{
-    margin-top: -250px;
-} */
 
 #cardRender2
 {
@@ -185,37 +161,33 @@ div
 main
 {
     display: flex;
+    justify-content: center;
     align-items: center;
-    height: 100%;
-
-}
-
-.divBtn
-{
-    min-width: 555px;
-    max-width: 555px;
+    height:70vh;
+    width: 100%;
 }
 
 .left{
-    width: 150px;
-    height: 150px;
+    width: 6rem;
+    height: 6rem;
     background-color: var(--color-7);
     border: 10px solid var(--color-4);
     border-radius: 100%;
-    font-size: 50px;
-    margin-top: 200px;
-
+    font-size: 2.5rem;
+    margin-top: 480px;
+    margin-right: -255px;
+    z-index: 1;
 }
 
 .rigth{
-    width: 150px;
-    height: 150px;
+    width: 6rem;
+    height: 6rem;
     background-color: var(--color-1);
     border: 10px solid var(--color-4);
     border-radius: 100%;
-    font-size: 50px;
-    margin-top: 170px;
-
+    font-size: 2.5rem;
+    margin-top: 480px;
+    margin-left: -255px;
 }
 
 .loadDiv{
@@ -228,13 +200,15 @@ main
 
 #loadDiv2
 {
-    margin-top: -290px;
+    margin-top: 900px;
     min-width: 535px;
 }
 
 .erro402
 {
-    width: 800px;
+    width: 40rem;
+    margin-top: 80px;
+    border: none;
 }
 
 @keyframes loading {
@@ -264,5 +238,127 @@ footer{
     border-radius: 15px;
     cursor: pointer;
     border: none;
-    margin-top: 0px;
+    margin-top: -710px;
+    margin-right: 10px;
 }
+
+@media(min-width: 768px)
+{
+  
+    .nav
+    {
+        display: flex;
+        width: 100%;
+        height: 80px;
+        gap: 20px;
+        justify-content: space-between; 
+        margin-bottom: 30px;
+    }
+
+    #searchDiv
+{
+    display: flex;
+    flex-direction: row;
+    background: var(--grey5);
+    height: 2rem;
+    border-radius: 8px;
+    margin-left: 0px;
+    margin-top: 0px;
+
+}
+.searchInput
+{
+    width: 16rem;
+    height: 40px;
+    border: none;
+    border-radius: 8px 0px 0px 8px;
+    padding-left: 16px;
+    outline: none;
+    background: var(--color-5);
+    color: var(--color-4);
+}
+#cardRender2
+{
+    margin-top: 100px;
+}
+.bg
+{
+    width: 18rem;
+    height: 30rem;
+    height: 27rem;
+    margin: -296px auto;
+    border-radius: 16px;
+}
+
+.dev
+{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 200px;
+    /* margin: -197px 0; */
+}
+
+#voltar{
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: #CCFF00;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    border: none;
+    margin-top: -10px;
+    margin-right: 10px;
+}
+
+.nome
+{
+    /* color: var(--color-3);
+    font-size: 2.2rem;
+    font-weight: 900;
+    margin-top: 20px;
+    margin-right: 260px;
+    transform: rotate(270deg); */
+    position: absolute;
+
+    z-index: 30;
+    font-size: 2.8rem;
+    font-weight: 900;
+
+    margin-top: 4rem;
+    margin-left: -4.4rem;        
+    transform: rotate(-90deg);
+}
+
+.status
+{
+    color: var(--color-3);
+    font-size: 2.2rem;
+    font-weight: 900;
+    /* margin-top: -100px; */
+    margin-left: 255px;
+    transform: rotate(-270deg);
+}
+/* .nome
+{
+    color: var(--color-3);
+    font-size: 2.2rem;
+    font-weight: 900;
+    margin-top: 250px;
+    margin-right: 260px;
+    transform: rotate(270deg);
+} */
+
+.nome1
+{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--color-3);
+    /* margin: 260px 0 0 0; */
+}
+/* #cardRender2
+{
+    margin-top: 30px;
+    min-width: 535px;
+} */
+}
+
