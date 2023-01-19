@@ -3,14 +3,27 @@ import { todosPersonagens, personaId } from "./requestRender.js"
 let favCount = 0;
 
 async function renderizaPersonagens() {
+    const main = document.querySelector('main')
     const section = document.querySelector('#figure')
 
     const buttonRigth = document.querySelector('.rigth')
 
+    const imgLoad = document.createElement('img')
+    const loadDiv = document.createElement('div')
+
+    imgLoad.src = "../assets/loading 1.png"
+    loadDiv.className = "loadDiv"
+    loadDiv.id = "loadDiv2"
 
     buttonRigth.addEventListener('click', async (e) => {
 
         section.innerHTML = ''
+        loadDiv.appendChild(imgLoad)
+        section.appendChild(loadDiv)
+        
+        setTimeout(async () => 
+        {
+            section.innerHTML = ''
 
         favCount++;
 
@@ -26,6 +39,7 @@ async function renderizaPersonagens() {
         const persona = personas(personagem)
 
         section.appendChild(persona)
+        }, 1000)
 
     })
 
@@ -58,6 +72,7 @@ async function renderizaPersonagens() {
 function personas(personagem) {
 
     const div = document.createElement('div')
+    div.classList.add('cardRender')
 
     const nome = document.createElement('h1')
     nome.innerText = personagem.name

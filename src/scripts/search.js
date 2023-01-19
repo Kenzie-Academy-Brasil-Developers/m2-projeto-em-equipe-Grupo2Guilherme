@@ -3,7 +3,8 @@ import { personagemAPI } from "./requestsSearch.js";
 
 async function renderPersonsPesquisa () {
  
-    const main    = document.querySelector('main')
+    const main     = document.querySelector('main')
+    const section  = document.querySelector('#figure')
     const input   = document.querySelector('.searchInput')
     const footer  = document.querySelector('footer')
     const form    = document.getElementById('searchDiv')
@@ -38,15 +39,18 @@ async function renderPersonsPesquisa () {
             setTimeout(() => {
 
                 main.innerHTML = ''
+                section.innerHTML = ''
 
                 const img = document.createElement('img')
                 const div402 = document.createElement('div')
 
                 img.src = "../assets/Error402.svg"
+                img.className = 'erro402'
                 div402.classList.add = "div402"
                 
                 div402.appendChild(img)
-                main.appendChild(div402)
+                section.appendChild(div402)
+                main.appendChild(section)
             }, 1000)
         }else{
 
@@ -65,24 +69,29 @@ async function renderPersonsPesquisa () {
                 setTimeout(() => {
     
                     main.innerHTML = ''
+                    section.innerHTML = ''
     
                     const img = document.createElement('img')
                     const div402 = document.createElement('div')
     
                     img.src = "../assets/Error402.svg"
+                    img.className = 'erro402'
                     div402.classList.add = "div402"
                     
                     div402.appendChild(img)
-                    main.appendChild(div402)
+                    section.appendChild(div402)
+                    main.appendChild(section)
                 }, 1000)
             }else{
                 
                 if(personagens.results.length === 1) {
                     setTimeout(() => {
                     main.innerHTML = ''
+                    section.innerHTML = ''
                     const personSel = criarPersonsPesquisa(personagens.results[0])
 
-                    main.appendChild(personSel)
+                    section.appendChild(personSel)
+                    main.appendChild(section)
                 }, 1000)
                 }else{
                     
@@ -96,9 +105,11 @@ async function renderPersonsPesquisa () {
             
                     setTimeout(() => {
                         main.innerHTML = ''
+                        section.innerHTML = ''
                         const personSel = criarPersonsPesquisa(personagens.results[random])
     
-                        main.appendChild(personSel)
+                        section.appendChild(personSel)
+                        main.appendChild(section)
                     }, 1000)
                 }
                 
@@ -120,6 +131,8 @@ function criarPersonsPesquisa(personagem) {
     const pStatus  = document.createElement('p')
     const pGenero  = document.createElement('p')
     const pEspecie = document.createElement('p')
+
+    div.id  = "cardRender2"
 
     h1.className       = "nome"
     h1.innerText       = personagem.name

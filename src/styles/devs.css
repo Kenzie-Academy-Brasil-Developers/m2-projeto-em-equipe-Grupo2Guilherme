@@ -15,14 +15,14 @@ body {
 
 .nav {
     width: 100vw;
-    height: 80px;
+    height: 100px;
 
     padding: 1rem 2.5rem;
 
     display: flex;
     align-items: center;
 
-    background-color: #001507B2;
+    background-color: #011808;
 }
 
 .nav__itens {
