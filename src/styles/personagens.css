@@ -98,7 +98,7 @@ div
 
 .bg
 {
-    margin: -360px;
+    margin: -350px;
     border-radius: 16px;
 }
 
@@ -144,9 +144,9 @@ div
 }
 
 
-.left{
-    width: 70px;
-    height: 70px;
+/* .left{
+    width: 30px;
+    height: 30px;
     background-color: #E4FFEA80;
     border-radius: 50px;
     border: none;
@@ -166,20 +166,34 @@ div
     right: -590px;
     top: -450px;
     cursor: pointer;
-}
+} */
 
 #figure{
-    display: flex;
-    align-items: center;
+    min-width: 555px;
+    max-width: 555px;
 }
 
-.cardRender{
+/* .cardRender{
     margin-top: -250px;
-}
+} */
 
 #cardRender2
 {
     margin-top: 100px;
+}
+
+main
+{
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+}
+
+.divBtn
+{
+    min-width: 555px;
+    max-width: 555px;
 }
 
 .left{
@@ -209,11 +223,12 @@ div
     display: flex;
     align-items: center;
     animation: loading 2s linear infinite;
+    min-width: 535px;
 }
 
 #loadDiv2
 {
-    margin-top: -350px;
+    margin-top: -290px;
     min-width: 535px;
 }
 

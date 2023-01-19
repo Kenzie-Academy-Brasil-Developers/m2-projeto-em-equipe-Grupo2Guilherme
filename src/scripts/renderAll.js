@@ -13,7 +13,7 @@ async function renderizaPersonagens() {
 
     imgLoad.src = "../assets/loading 1.png"
     loadDiv.className = "loadDiv"
-    loadDiv.id = "loadDiv2"
+    loadDiv.id = "cardRender2"
 
     buttonRigth.addEventListener('click', async (e) => {
 
@@ -72,7 +72,8 @@ async function renderizaPersonagens() {
 function personas(personagem) {
 
     const div = document.createElement('div')
-    div.classList.add('cardRender')
+    // div.classList.add('cardRender')
+    div.id = 'cardRender2'
 
     const nome = document.createElement('h1')
     nome.innerText = personagem.name
