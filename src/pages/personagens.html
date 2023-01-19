@@ -13,7 +13,6 @@
 
 <body>
     <header>
-
         <nav class="nav">
             <ul class="nav__itens">
                 <ul class="links">
@@ -22,16 +21,13 @@
                     <li><a href="./devs.html">Dev's</a></li>
                 </ul>
             </ul>
-            <input type="text" placeholder="Procure um personagem">
-            <img src="../assets/lupa 1.png" alt="">
-
+                <form id="searchDiv">
+                <input class="searchInput" type="text" placeholder="Procure um personagem" ><img class="lupa" src="../assets/lupa 1.png" alt="Lupa">
+                <button type="submit" class="searchBtn"></button>
+            </form>
         </nav>
-        <form id="searchDiv">
-            <input class="searchInput" type="text" placeholder="Procure um personagem">
-            <button type="submit" class="searchBtn"><img src="../assets/lupa 1.png" alt=""></button>
-        </form>
-            
     </header>
+
     <!-- <div class="error">
         <h1>WUBBA LUBBA DUB BUB!</h1>
         <img src="../assets/rick404.png" alt="">
@@ -39,12 +35,14 @@
         <h1>4</h1>
         <span>O personagem que você procura está desaparecido! :O</span>
     </div> -->
+
     <main>
 
-        <button class="left"><i class="fa-sharp fa-solid fa-chevrons-right"></i></button>
         <section id="figure">
-            <div>
-                <h1 class="nome">Rick Sanchez</h1>
+            <button class="left"> < <i class="fa-sharp fa-solid fa-chevrons-right"></i></button>
+
+            <div class="cardRender">
+                <h1 class="nome">Ants in my Eyes Johnson</h1>
                 <h2 class="status">Alive</h2>
                 <img class="bg" src="../assets/bg dev.png" alt="">
                 <img class="dev" src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="">
@@ -53,20 +51,20 @@
                 <p class="genero">Gênero: Male</p>
                 <p class="especie">Espécie: Human</p>
             </div>
+
+            <button class="rigth"> > <i class="fa-sharp fa-solid fa-chevrons-right"></i></button>
         </section>
-        <button class="rigth"><i class="fa-sharp fa-solid fa-chevrons-right"></i></button>
+        
     </main>
 
     <footer>
-        <!-- <button id="voltar">Voltar para um lugar seguro</button> -->
+        <!-- /*<button id="voltar">Voltar para um lugar seguro</button>*/ -->
     </footer>
 
 
 
     <script src="https://kit.fontawesome.com/ccf616a541.js" crossorigin="anonymous"></script>
     <script type="module" src="../scripts/renderAll.js"></script>
-
-
     <script type="module" src="../scripts/search.js"></script>
 
 </body>
