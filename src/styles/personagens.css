@@ -2,8 +2,8 @@ body
 {
     width: 100%;
     height: 100%;
-    color: var(--grey3);
-    background: var(--grey4);
+    color: var(--color-3);
+    background: var(--color-4);
     line-height: 45px;
 }
 
@@ -18,12 +18,12 @@ nav
     height: 80px;
     display: flex;
     align-items: center;
-    background: var(--grey4);
+    background: var(--color-4);
 }
 
 nav a
 {
-    color: var(--grey2);
+    color: var(--color-2);
     margin: 20px;
     cursor: pointer;
 }
@@ -36,8 +36,8 @@ input
     left: 600px;
     border: none;
     border-radius: 8px;
-    background: var(--grey5);
-    color: var(--grey4);
+    background: var(--color-5);
+    color: var(--color-4);
 }
 
 nav img
@@ -69,7 +69,7 @@ div
 
 .nome
 {
-    color: var(--grey3);
+    color: var(--color-3);
     font-size: 4.37rem;
     font-weight: 900;
     margin: 150px 0 0 -455px;
@@ -78,7 +78,7 @@ div
 
 .status
 {
-    color: var(--grey3);
+    color: var(--color-3);
     font-size: 4.37rem;
     font-weight: 900;
     margin: 150px 0 0 455px;
@@ -88,6 +88,6 @@ div
 .nome1
 {
     font-size: 1rem;
-    color: var(--grey3);
+    color: var(--color-3);
     margin: 100px 0 0 0;
 }

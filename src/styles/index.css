@@ -1,7 +1,15 @@
 body
 {
+<<<<<<< HEAD
     color: var(--grey3);
     background: var(--grey4);
+=======
+
+    color: var(--color-3);
+    background: var(--color-4);
+    background-image: url(../assets/Background.png);
+
+>>>>>>> de0553d723a45ac5fb67f3dd394c4cff405dc0d5
     background-repeat: no-repeat;
     line-height: 45px;
     width: 100%;
@@ -28,12 +36,16 @@ nav
     height: 80px;
     display: flex;
     align-items: center;
-    background: var(--grey4);
+    background: var(--color-4);
 }
 
 nav a
 {
+<<<<<<< HEAD
     color: var(--grey3);
+=======
+    color: var(--color-2);
+>>>>>>> de0553d723a45ac5fb67f3dd394c4cff405dc0d5
     margin: 20px;
     cursor: pointer;
 }
@@ -46,8 +58,8 @@ input
     left: 20rem;
     border: none;
     border-radius: 8px;
-    background: var(--grey5);
-    color: var(--grey4);
+    background: var(--color-5);
+    color: var(--color-4);
 }
 
 nav img
@@ -58,7 +70,7 @@ nav img
 
 h2
 {
-    color: var(--grey2);
+    color: var(--color-2);
     margin-top: -80px;
     margin-left: 30px;
     font-size: 1rem;
@@ -66,7 +78,7 @@ h2
 
 h3
 {
-    color: var(--grey2);
+    color: var(--color-2);
     margin-top: -20px;
     margin-left: 30px;
     font-size: 1rem;
@@ -75,8 +87,8 @@ h3
 .home2
 {
     width: 100%;
-    color: var(--grey3);
-    background: var(--grey4);
+    color: var(--color-3);
+    background: var(--color-4);
     display: flex;
     flex-wrap: wrap;
 }
@@ -97,7 +109,7 @@ h3
 
 .titulo2
 {
-    color: var(--grey2);
+    color: var(--color-2);
     margin-top: 20px;
     margin-left: 20px;
     font-size: 1rem;
@@ -105,7 +117,7 @@ h3
 
 .titulo3
 {
-    color: var(--grey2);
+    color: var(--color-2);
     margin-top: 50px;
     margin-left: -55px;
     font-size: 1rem;
@@ -125,7 +137,7 @@ h3
 .descricao
 {
     height: 100%;
-    color: var(--grey2);
+    color: var(--color-2);
     font-size: 1.5rem;
     font-weight: 500;
     margin: 0 30px;
@@ -133,9 +145,35 @@ h3
 
 span
 {
-    color: var(--grey1);
+    color: var(--color-1);
 }
 
+<<<<<<< HEAD
+=======
+.home3
+{
+    margin: 450px 0;
+    background-image: url(../assets/Background1.png);
+    width: 100%;
+    height: 100%;
+}
+
+.line2
+{
+    position: relative;
+    height: 60px;
+    top: -390px;
+}
+
+.trailerDesc
+{
+    color: var(--color-2);
+    margin-top: -470px;
+    margin-left: 30px;
+    font-size: 1rem;
+}
+
+>>>>>>> de0553d723a45ac5fb67f3dd394c4cff405dc0d5
 .trailer
 {
    position: relative;
@@ -174,7 +212,7 @@ span
 
 a
 {
-    color: var(--grey2);
+    color: var(--color-2);
     cursor: pointer;
     font-size: 1.5rem;
     padding: 10px;

@@ -7,28 +7,35 @@
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/globalstyles.css">
     <link rel="stylesheet" href="../styles/devs.css">
-    <title>Personagens</title>
+    <title>Devs</title>
 </head>
 <body>
     <header>
-        <nav>
-            <a href="../../index.html">Home</a>
-            <a href="./personagens.html">Personagens</a>
-            <a href="./devs.html">Dev's</a>
-            <input type="text" placeholder="Procure um personagem">
-            <img src="../assets/lupa 1.png" alt="">
+        <nav class="nav">
+            <ul class="nav__itens">
+                <ul class="links">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="./personagens.html">Personagens</a></li>
+                    <li><a href="./devs.html" class="selecionado">Dev's</a></li>
+                </ul>
+            </ul>
         </nav>
     </header>
     <main>
-        <div>
-            <h1 class="nome">Nome</h1>
-            <h2 class="front">Front</h2>
-            <img class="bg" src="../assets/bg dev.png" alt="">
-            <img class="dev" src="../assets/Laisa.jpeg" alt="">
-            <p class="escola">Estudante: Kenzie Academy</p>
-            <p class="instrutor">Instrutor: Guilherme</p>
-            <p class="turma">Turma: 15</p>
+        <div class="cartao">
+            <span class="cartao__span">VITOR</span>
+            <img src="../assets/Vitor.jpeg" alt="dev-foto" class="cartao__foto">
+            <h2 class="cartao__nome">Vitor Hugo</h2>
+            <span class="cartao__estudante"><strong>Curso:</strong>Kenzie Academy</span>
+            <ul class="cartao__rodape">
+                <li><strong>Instrutor:</strong>Guilherme</li>
+                <li><strong>Turma:</strong>15</li>
+            </ul>
+            <span class=cartao__span>FRONT</span>
         </div>
     </main>
+    <footer>
+        <span>VITOR HUGO</span>
+    </footer>
 </body>
 </html>
