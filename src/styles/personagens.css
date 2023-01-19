@@ -1,15 +1,11 @@
 body {
-    width: 100vw;
-    height: 100vh;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: black;
+    overflow-x: hidden;
 
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
 }
 
 .nav {
@@ -73,6 +69,7 @@ body {
     outline: none;
     background: var(--color-5);
     color: var(--color-4);
+    
 }
 
 .searchBtn
@@ -82,6 +79,12 @@ body {
     border-radius: 0px 8px 8px 0px;
     cursor: pointer;
     border: none;
+}
+
+.lupa{
+    background-color: var(--color-5);
+    border: 7px solid var(--color-5);
+    border-radius: 0px 8px 8px 0px;
 }
 
 div
@@ -132,14 +135,7 @@ div
     margin: 100px 0 0 0;
 }
 
-.status1
-{
-    font-size: 1.25rem;
-    color: var(--color-3);
-    margin: 15px 0 0 0;
-}
-
-.genero, .especie
+.genero, .especie, .status1
 {
     font-size: 1rem;
     color: var(--color-3);
@@ -169,6 +165,37 @@ div
     right: -700px;
     top: -300px;
     cursor: pointer;
+}
+
+#figure{
+    display: flex;
+    align-items: center;
+}
+
+.cardRender{
+    margin-top: 3rem;
+}
+
+.left{
+    width: 150px;
+    height: 150px;
+    background-color: var(--color-7);
+    border: 10px solid var(--color-4);
+    border-radius: 100%;
+    font-size: 50px;
+    margin-top: 200px;
+
+}
+
+.rigth{
+    width: 150px;
+    height: 150px;
+    background-color: var(--color-1);
+    border: 10px solid var(--color-4);
+    border-radius: 100%;
+    font-size: 50px;
+    margin-top: 200px;
+
 }
 
 .loadDiv{
