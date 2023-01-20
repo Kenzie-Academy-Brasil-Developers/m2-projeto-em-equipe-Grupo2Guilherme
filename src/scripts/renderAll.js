@@ -1,16 +1,29 @@
-import { todosPersonagens, personaId } from "./requestRender.js"
+import { personaId } from "./requestRender.js"
 
-let favCount = 0;
+let favCount = 1;
 
 async function renderizaPersonagens() {
+
     const section = document.querySelector('#figure')
 
     const buttonRigth = document.querySelector('.rigth')
 
+    const imgLoad = document.createElement('img')
+    const loadDiv = document.createElement('div')
 
-    buttonRigth.addEventListener('click', async (e) => {
+    imgLoad.src = "../assets/loading 1.png"
+    loadDiv.className = "loadDiv"
+    loadDiv.id = "cardRender2"
+
+    buttonRigth.addEventListener('click', async () => {
 
         section.innerHTML = ''
+        loadDiv.appendChild(imgLoad)
+        section.appendChild(loadDiv)
+        
+        setTimeout(async () => 
+        {
+            section.innerHTML = ''
 
         favCount++;
 
@@ -26,9 +39,8 @@ async function renderizaPersonagens() {
         const persona = personas(personagem)
 
         section.appendChild(persona)
-
+        }, 1000)
     })
-
 
     const buttonLeft = document.querySelector('.left')
 
@@ -50,14 +62,13 @@ async function renderizaPersonagens() {
         const persona = personas(personagem)
 
         section.appendChild(persona)
-
     })
 }
-
 
 function personas(personagem) {
 
     const div = document.createElement('div')
+    div.id = 'cardRender2'
 
     const nome = document.createElement('h1')
     nome.innerText = personagem.name
@@ -105,4 +116,3 @@ function personas(personagem) {
 }
 
 renderizaPersonagens()
-

@@ -1,50 +1,57 @@
-body {
-
+body 
+{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: black;
-    overflow-x: hidden;
-
 }
 
-.nav {
-    width: 100vw;
-    height: 80px;
+header
+{
+    width: 100%;
+}
 
-    padding: 1rem 2.5rem;
-
+.nav 
+{
+    width: 100%;
+    height: 100px;
+    padding: 0 2.5rem 1rem 0;
     display: flex;
     align-items: center;
-
-    background-color: #001507B2;
+    background-color: #011808;
+    justify-content: center;
 }
 
-.nav__itens {
+.nav__itens 
+{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.links {
+.links 
+{
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
+    padding-left: 30px;
 }
 
-.links a {
-    font-size: 24px;
+.links a 
+{
+    font-size: 1.5rem;
     font-weight: 500;
-
     color: var(--color-3);
-
     transition: 0.5s ease-in-out
 }
 
-.links a:hover {
+.links a:hover 
+{
     color: var(--color-1);
 }
 
-.selecionado {
+.selecionado 
+{
     color: var(--color-1) !important;
 }
 
@@ -53,36 +60,35 @@ body {
     display: flex;
     flex-direction: row;
     background: var(--grey5);
-    height: 40px;
+    height: 2rem;
     border-radius: 8px;
-    margin: auto;
-    margin-right: 20px;
+    margin-left: -300px;
+    margin-top: 70px;
 }
 
-input
+.searchInput
 {
-    width: 400px;
-    height: 38px;
-    left: 600px;
+    width: 16rem;
+    height: 40px;
     border: none;
     border-radius: 8px 0px 0px 8px;
     padding-left: 16px;
     outline: none;
     background: var(--color-5);
     color: var(--color-4);
-    
 }
 
 .searchBtn
 {
-    background: var(--grey5);
+    background: var(--color-5);
     height: 42px;
     border-radius: 0px 8px 8px 0px;
     cursor: pointer;
     border: none;
 }
 
-.lupa{
+.lupa
+{
     background-color: var(--color-5);
     border: 7px solid var(--color-5);
     border-radius: 0px 8px 8px 0px;
@@ -98,106 +104,252 @@ div
 
 .bg
 {
-    margin: -350px;
+    width: 18rem;
+    height: 30rem;
+    margin: -340px auto;
     border-radius: 16px;
 }
 
 .dev
 {
-    width: 278px;
-    height: 278px;
+    width: 10rem;
+    height: 10rem;
     border-radius: 200px;
-    margin: -100px auto;
+    margin: -100px 0;
 }
 
 .nome
 {
     color: var(--color-3);
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 900;
-    margin: 250px 0 0 -455px;
+    margin-top: 190px;
+    margin-right: 260px;
     transform: rotate(270deg);
 }
 
 .status
 {
     color: var(--color-3);
-    font-size: 3rem;
+    font-size: 2.2rem;
     font-weight: 900;
-    margin: 150px 0 0 455px;
+    margin-top: 10px;
+    margin-left: 255px;
     transform: rotate(-270deg);
 }
 
 .nome1
 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--color-3);
+    margin: 105px 0 0 0;
+}
+
+.genero, .especie, .status1
+{
     font-size: 1rem;
     color: var(--color-3);
-    margin: 100px 0 0 0;
+    margin: 10px 0 0 0;
 }
 
-#figure{
+#figure
+{
+    min-width: 34rem;
+    max-width: 34rem;
+}
+
+#cardRender2
+{
+    margin-top: 100px;
+}
+
+main
+{
     display: flex;
+    justify-content: center;
     align-items: center;
+    height:70vh;
+    width: 100%;
 }
 
-.cardRender{
-    margin-top: 3rem;
-}
-
-.left{
-    width: 150px;
-    height: 150px;
+.left
+{
+    width: 6rem;
+    height: 6rem;
     background-color: var(--color-7);
     border: 10px solid var(--color-4);
     border-radius: 100%;
-    font-size: 50px;
-    margin-top: 200px;
-
+    font-size: 2.5rem;
+    margin-top: 480px;
+    margin-right: -255px;
+    z-index: 1;
 }
 
-.rigth{
-    width: 150px;
-    height: 150px;
+.rigth
+{
+    width: 6rem;
+    height: 6rem;
     background-color: var(--color-1);
     border: 10px solid var(--color-4);
     border-radius: 100%;
-    font-size: 50px;
-    margin-top: 200px;
-
+    font-size: 2.5rem;
+    margin-top: 480px;
+    margin-left: -255px;
 }
 
-.loadDiv{
+.loadDiv
+{
     min-height: 450px;
     display: flex;
     align-items: center;
     animation: loading 2s linear infinite;
+    min-width: 535px;
 }
 
-@keyframes loading {
-    0%{
+#loadDiv2
+{
+    margin-top: 900px;
+    min-width: 535px;
+}
+
+.erro402
+{
+    width: 40rem;
+    margin-top: 80px;
+    border: none;
+}
+
+@keyframes loading 
+{
+    0% 
+    {
         transform: rotate(0);
     }
 }
 
-@keyframes loading {
-	100% {
+@keyframes loading 
+{
+	100% 
+    {
 		transform: rotate(360deg);
 	}
 }
 
-footer{
+footer
+{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 15px auto;
 }
 
-#voltar{
+#voltar
+{
     font-size: 1.5rem;
     font-weight: 700;
     background-color: #CCFF00;
     padding: 10px;
     border-radius: 15px;
     cursor: pointer;
+    border: none;
+    margin-top: 100px;
+    margin-right: 10px;
 }
 
+@media(min-width: 768px)
+{
+    .nav
+    {
+        display: flex;
+        width: 100%;
+        height: 80px;
+        gap: 20px;
+        justify-content: space-between; 
+        margin-bottom: 30px;
+    }
+
+    #searchDiv
+    {
+        display: flex;
+        flex-direction: row;
+        background: var(--grey5);
+        height: 2rem;
+        border-radius: 8px;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    .searchInput
+    {
+        width: 16rem;
+        height: 40px;
+        border: none;
+        border-radius: 8px 0px 0px 8px;
+        padding-left: 16px;
+        outline: none;
+        background: var(--color-5);
+        color: var(--color-4);
+    }
+
+    #cardRender2
+    {
+        margin-top: 100px;
+    }
+
+    .bg
+    {
+        width: 18rem;
+        height: 30rem;
+        height: 27rem;
+        margin: -296px auto;
+        border-radius: 16px;
+    }
+
+    .dev
+    {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 200px;
+    }
+
+    #voltar
+    {
+        font-size: 1.5rem;
+        font-weight: 700;
+        background-color: #CCFF00;
+        padding: 10px;
+        border-radius: 15px;
+        cursor: pointer;
+        border: none;
+        margin-top: -10px;
+        margin-right: 10px;
+    }
+
+    .nome
+    {
+        position: absolute;
+        z-index: 30;
+        font-size: 2.8rem;
+        font-weight: 900;
+        margin-top: 4rem;
+        margin-left: -4.4rem;        
+        transform: rotate(-90deg);
+    }
+
+    .status
+    {
+        color: var(--color-3);
+        font-size: 2.2rem;
+        font-weight: 900;
+        margin-left: 255px;
+        transform: rotate(-270deg);
+    }
+
+    .nome1
+    {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: var(--color-3);
+    }
+}

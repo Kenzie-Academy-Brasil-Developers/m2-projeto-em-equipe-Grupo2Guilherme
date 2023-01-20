@@ -1,89 +1,176 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
-
-body {
+body 
+{
     width: 100vw;
     height: 100vh;
-
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: black;
-
-    overflow: hidden;
+    background-image: url(../assets/Background.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #001506;
+    overflow-x: hidden;
 }
 
-.nav {
+.nav 
+{
     width: 100vw;
-    height: 80px;
-
+    height: 100px;
     padding: 1rem 2.5rem;
-
     display: flex;
     align-items: center;
-
-    background-color: #001507B2;
+    background-color: #011808;
 }
 
-.nav__itens {
+.nav__itens 
+{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.links {
+.links 
+{
     display: flex;
     gap: 2rem;
 }
 
-.links a {
+.links a 
+{
     font-size: 24px;
     font-weight: 500;
-
     color: var(--color-3);
-
     transition: 0.5s ease-in-out
 }
 
-.links a:hover {
+.links a:hover 
+{
     color: var(--color-1);
 }
 
-.selecionado {
+.selecionado 
+{
     color: var(--color-1) !important;
 }
 
-.barra__pesquisa {
+.barra__pesquisa 
+{
     display: flex;
     align-items: center;
 }
 
-main {
+main 
+{
     width: 100vw;
     height: calc(100vh - 80px);
-
     display: flex;
     flex-direction: column;
-
+    color: #fff;
     justify-content: center;
     align-items: center;
+    padding-bottom: 2rem;
 }
 
-.cartao {
-    width: 500px;
-    height: 650px;
+.lista__cartao 
+{
+    display: flex;
+    gap: 3.5rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 95vw;
+    height: 90vh;
+}
 
+.cartao__geral 
+{
+    transition: 0.3s ease-in-out;
+}
+
+.cartao__geral:hover 
+{
+    transform: scale(1.03);
+}
+
+.cartao
+{
+    width: 300px;
+    height: 450px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
-
     border-radius: 1rem;
-    background-color: blue;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    background-blend-mode: multiply;
+    background: url(../assets/bg\ dev.png);
+    background-color: #007a23;
+    background-size: cover;
+    transition: 0.5s ease-in-out;
 }
 
-.cartao__foto {
-    width: 80%;
+.cartao:hover 
+{
+    box-shadow: 5px 5px 25px 5px #007a233f;
+    border: solid 2px #007a23;
+}
 
+.cartao__foto 
+{
+    width: 80%;
     border-radius: 50%;
+}
+
+.cartao__nome 
+{
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 0.7rem 0;
+}
+
+.cartao__estudante 
+{
+    font-size: 1rem; 
+}
+
+.cartao__rodape 
+{
+    display: flex;
+    gap: 1rem;
+    font-size: 1rem;
+    margin-top: 0.7rem;
+}
+
+strong 
+{
+    font-weight: 700;
+}
+
+.status__sobreposto 
+{
+    position: absolute;
+    font-size: 2.8rem;
+    font-weight: 900;
+    margin-top: 22.5rem;
+    margin-left: 14.5rem;
+    transform: rotate(90deg);
+}
+
+.nome__sobreposto 
+{
+    position: absolute;
+    z-index: 30;
+    font-size: 2.8rem;
+    font-weight: 900;
+    margin-top: 4rem;
+    margin-left: -4.4rem;        
+    transform: rotate(-90deg);
+}
+
+#leonardoNome 
+{
+    margin-top: 7rem;
+    margin-left: -7rem;
 }

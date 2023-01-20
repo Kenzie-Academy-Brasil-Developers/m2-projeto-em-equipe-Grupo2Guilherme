@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/tumblr_21c86e641d3a246a0512b00c08c8f624_9ec57695_100.jpg"/>
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/globalstyles.css">
     <link rel="stylesheet" href="../styles/personagens.css">
@@ -21,47 +22,34 @@
                     <li><a href="./devs.html">Dev's</a></li>
                 </ul>
             </ul>
-                <form id="searchDiv">
-                <input class="searchInput" type="text" placeholder="Procure um personagem" ><img class="lupa" src="../assets/lupa 1.png" alt="Lupa">
-                <button type="submit" class="searchBtn"></button>
+            <form id="searchDiv">
+                <input class="searchInput" type="text" placeholder="Procure um personagem">
+                <button type="submit" class="searchBtn"><img src="../assets/lupa 1.png" alt=""></button>
             </form>
         </nav>
     </header>
 
-    <!-- <div class="error">
-        <h1>WUBBA LUBBA DUB BUB!</h1>
-        <img src="../assets/rick404.png" alt="">
-        <h1>4</h1>
-        <h1>4</h1>
-        <span>O personagem que você procura está desaparecido! :O</span>
-    </div> -->
-
-    <main>
-
+    <main >
+        <button class="left"> < </button>
+    
         <section id="figure">
-            <button class="left"> < <i class="fa-sharp fa-solid fa-chevrons-right"></i></button>
-
-            <div class="cardRender">
-                <h1 class="nome">Ants in my Eyes Johnson</h1>
+            <div class="cardRender" id="cardRender2">
+                <h1 class="nome">Rick Sanches</h1>
                 <h2 class="status">Alive</h2>
                 <img class="bg" src="../assets/bg dev.png" alt="">
                 <img class="dev" src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="">
                 <p class="nome1">Rick Sanchez</p>
-                <p class="status1">Status: Alive</p>
-                <p class="genero">Gênero: Male</p>
-                <p class="especie">Espécie: Human</p>
+                <p class="status1">Alive</p>
+                <p class="genero">Male</p>
+                <p class="especie">Human</p>
             </div>
-
-            <button class="rigth"> > <i class="fa-sharp fa-solid fa-chevrons-right"></i></button>
         </section>
-        
+
+        <button class="rigth"> > </button>
     </main>
 
     <footer>
-        <!-- /*<button id="voltar">Voltar para um lugar seguro</button>*/ -->
     </footer>
-
-
 
     <script src="https://kit.fontawesome.com/ccf616a541.js" crossorigin="anonymous"></script>
     <script type="module" src="../scripts/renderAll.js"></script>

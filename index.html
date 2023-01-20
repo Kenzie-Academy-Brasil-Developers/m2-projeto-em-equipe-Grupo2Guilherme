@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./src/assets/tumblr_21c86e641d3a246a0512b00c08c8f624_9ec57695_100.jpg" />
+    <link rel="icon" href="./src/assets/tumblr_21c86e641d3a246a0512b00c08c8f624_9ec57695_100.jpg"/>
     <link rel="stylesheet" href="./src/styles/reset.css">
     <link rel="stylesheet" href="./src/styles/globalstyles.css">
     <link rel="stylesheet" href="./src/styles/index.css">
@@ -22,43 +22,29 @@
                     <li><a href="./src/pages/devs.html">Dev's</a></li>
                 </ul>
             </ul>
-
         </nav>
     </header>
     
     <main>
-
         <section class="home1">
-
             <div class="saudacao">
                 <img src="./src/assets/Line 2.png" alt="">
-                <div>
+                <div class="saudacoes">
                     <h2>Bem vindo a</h2><br>
                     <h3>Página do Rick and Morty</h3>  
                 </div>
-                  
             </div>
-            
-            <div class="trocaPagina">
-                <a class="selecionado" href="./index.html">01</a>
-                <a href="#home2">02</a>
-                <a href="#home3">03</a>
-                <a class="mouseAni" href="#home2"><img class="mouse1 btn" src="./src/assets/Mouse Icon.png" alt=""></a>
-            </div>  
-
+            <img class="bg" src="./src/assets/Background.jpg" alt="">
         </section>
 
         <section class="home2" id="home2" data-anime="right">
-
             <div class="descricaoFot">
                 <img src="./src/assets/Line 2.png" alt="">
                 <div>
                     <h2 class="titulo2">O que é</h2>
                     <h3 class="titulo3">Rick and Morty?</h3>  
                 </div>
-                 
             </div>
-            
             <div class="descRick">
                 <img src="./src/assets/rickAndMorty 1.png" alt="">
                 <p class="descricao">
@@ -68,48 +54,30 @@
                     complexo o mundo a sua volta pode ser e o quão desastrosas as relações de causa e efeito podem
                     ficar.
                 </p>
-
             </div>
-
-            <div class="trocaPages2">
-                <a href="./index.html">01</a>
-                <a class="selecionado" href="#home2">02</a>
-                <a href="#home3">03</a>
-                <a class="mouseAni" href="#home3"><img class="mouse2" src="./src/assets/Mouse Icon.png" alt=""></a>
-
-            </div>  
-
         </section>
         
-        <section class="home3" id="home3" data-anime="left"></class=>
-            
+        <section class="home3" id="home3" data-anime="left">
             <div class="trailerof">
                 <img src="./src/assets/Line 2.png" alt="">
                 <div>
                     <h2 class="trailerDesc">Trailer Oficial</h2>
                     <h3>Rick and Morty</h3>  
                 </div>
-                  
             </div>
-            
-            <iframe class="trailer" width="560" height="315" src="https://www.youtube.com/embed/u5FZVtesSBk" title="YouTube video 
+            <div id="trailer2">
+                <iframe class="trailer" width="560" height="315" src="https://www.youtube.com/embed/u5FZVtesSBk" title="YouTube video 
             player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
             picture-in-picture; web-share" allowfullscreen></iframe> 
-
-            <div class="trocarPagina">
-                <a href="./index.html">01</a>
-                <a href="#home2">02</a>
-                <a class="selecionado" href="#home3">03</a>
-                <a class="mouseAni" href="./index.html"><img class="mouse3" src="./src/assets/voltar.png" alt=""></a>
             </div>
-
+            <div class="trocarPagina">
+                <a class="mouseAni mouse3" href="./index.html"><img class="mouse3" src="./src/assets/voltar.png" alt=""></a>
+            </div>
         </section>
-        
-        
     </main>
 
     <script src="./src/scripts/animacoes.js"></script>
-
+    
 </body>
 
 </html>
