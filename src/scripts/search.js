@@ -1,10 +1,9 @@
 import { personagemAPI } from "./requestsSearch.js";
 
-
 async function renderPersonsPesquisa () {
  
-    const main     = document.querySelector('main')
-    const section  = document.querySelector('#figure')
+    const main    = document.querySelector('main')
+    const section = document.querySelector('#figure')
     const input   = document.querySelector('.searchInput')
     const footer  = document.querySelector('footer')
     const form    = document.getElementById('searchDiv')
@@ -86,6 +85,7 @@ async function renderPersonsPesquisa () {
                 
                 if(personagens.results.length === 1) {
                     setTimeout(() => {
+
                     main.innerHTML = ''
                     section.innerHTML = ''
                     const personSel = criarPersonsPesquisa(personagens.results[0])
@@ -104,6 +104,7 @@ async function renderPersonsPesquisa () {
                     const random = Math.round(getRandomArbitrary(1, tamanho))
             
                     setTimeout(() => {
+
                         main.innerHTML = ''
                         section.innerHTML = ''
                         const personSel = criarPersonsPesquisa(personagens.results[random])
@@ -112,16 +113,13 @@ async function renderPersonsPesquisa () {
                         main.appendChild(section)
                     }, 1000)
                 }
-                
             }
-    
-        }
-        
+        }  
     });
-
 }
 
 function criarPersonsPesquisa(personagem) {
+
     const div      = document.createElement('div')
     const h1       = document.createElement('h1')
     const h2       = document.createElement('h2')
