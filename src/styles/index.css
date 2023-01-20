@@ -287,7 +287,6 @@ a
     {
         padding-top: 120px;
         padding-left: 50px;
-    
     }
 
     .descricaoFot
@@ -307,10 +306,10 @@ a
 
     .trailer
     {
-    position: relative;
-    width: 600px;
-    height: 400px;
-    margin: auto;
+        position: relative;
+        width: 600px;
+        height: 400px;
+        margin: auto;
     }
 
     .trailerof

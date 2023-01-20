@@ -222,14 +222,16 @@ main
 
 @keyframes loading 
 {
-    0% {
+    0% 
+    {
         transform: rotate(0);
     }
 }
 
 @keyframes loading 
 {
-	100% {
+	100% 
+    {
 		transform: rotate(360deg);
 	}
 }
@@ -351,4 +353,3 @@ footer
         color: var(--color-3);
     }
 }
-
