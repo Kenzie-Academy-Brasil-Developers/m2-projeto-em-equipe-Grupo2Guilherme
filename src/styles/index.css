@@ -2,7 +2,6 @@ body
 {
     width: 100vw;
     height: 100vh;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,47 +17,44 @@ header
     opacity: 70%;
     position: fixed;
     z-index: 100;
-    /* top: 30px; */
 }
 
-.nav {
+.nav 
+{
     width: 100%;
     height: 80px;
-
-    /* padding: 1rem 2rem; */
-
     display: flex;
     align-items: center;
-
     background-color: #011808;
     padding-top: 30px;
-
 }
 
-.links {
+.links 
+{
     display: flex;
     padding-left: 30px;
 }
 
-.links a {
+.links a 
+{
     font-size: 24px;
     font-weight: 500;
-
     color: var(--color-3);
-
     transition: 0.5s ease-in-out
 }
 
-.links a:hover {
+.links a:hover 
+{
     color: var(--color-1);
 }
 
-.selecionado {
+.selecionado 
+{
     color: var(--color-1) !important;
 }
 
-
-main{
+main
+{
     display: flex;
     height: 375px;
     margin: 0 auto;
@@ -67,28 +63,22 @@ main{
     margin-top: 20px;
 }
 
-.home1{
+.home1
+{
     width: 99%;
     height: 1000vh;
-
-    /* background-image: url("../assets/Background.jpg");
-    background-repeat: no-repeat; */
 }
 
-.bg{
+.bg
+{
     width: 100%;
 }
 
-.saudacao{
-
+.saudacao
+{
     width: 400px;
-
     display: flex;
-    
-    
     padding-top: 90px;
-    /* padding-left: 50px; */
-
 }
 
 .saudacoes
@@ -96,31 +86,26 @@ main{
      padding-left: 10px;
 }
 
-.trocaPagina{
+.trocaPagina
+{
     margin-top: -30px;
     margin-left: 30px;
 }
-
 
 .home2
 {
     width: 100%;
     height: 100vh;
-    /* display: flex;
-    flex-wrap: wrap;
-    align-items: center; */
 }
 
-.descricaoFot{
+.descricaoFot
+{
     width: 50px;
     height: 200px;
-    /* display: flex;
-    align-items:center ; */
-    /* padding-top: 60px; */
-    /* padding-left: 50px; */
 }
 
-.descricaoFot > div{
+.descricaoFot > div
+{
     display: flex;
     width: 200px;
     margin-top: -75px;
@@ -134,16 +119,19 @@ main{
     margin: -120px 0;
 }
 
-.descRick > img{
+.descRick > img
+{
     width: 300px;;
 }
 
-.descRick > p{
+.descRick > p
+{
     line-height:50px;
     height: 300px;
 }
 
-.trocaPages2{
+.trocaPages2
+{
     padding-bottom: 20px;
     margin-top: -60px;
     margin-left: 50px;
@@ -158,24 +146,23 @@ main{
     margin-top: 220px;
 }
 
-.trailerof{
+.trailerof
+{
     width: 400px;
-
     display: flex;
-    /* gap: 20px; */
-    
     padding-top: 30px;
-    /* padding-left: 50px; */
 }
 
-.trailerof > div{
+.trailerof > div
+{
     display: flex;
     flex-direction: column;
     gap: 17px;
     padding-left: 10px;
 }
 
-.trocarPagina{
+.trocarPagina
+{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -228,7 +215,6 @@ span
    width: 190px;
    height: 190px;
    top: 5px;
-   /* left: 30%; */
    margin-bottom: 20px;
    padding-right: 20px;
 }
@@ -236,7 +222,6 @@ span
 .mouse3
 {
     width: 20px;
-    /* margin: -650px 0 0 20%; */
     animation: jumping 1s linear infinite;
     cursor: pointer;
 }
@@ -247,10 +232,12 @@ span
     animation: jumping 1s linear infinite;
     cursor: pointer; 
 }
+
 li > a
 {
     padding: 10px;
 }
+
 a
 {
     color: var(--color-2);
@@ -268,11 +255,6 @@ a
 [data-anime="right"]
 {
     transform: translate3d(50px, 0, 0);
-}
-
-[data-anime="up"]
-{
-    transform: translate3d(0, 100%, 0);
 }
 
 [data-anime="left"]
@@ -295,22 +277,21 @@ a
 
 @media(min-width: 768px)
 {
-    .home1{
+    .home1
+    {
         width: 100%;
         height: 1000vh;
-        
-        /* background-image: url("../assets/Background.jpg");
-        background-repeat: no-repeat; */
     }
     
-    .saudacao{
-        
+    .saudacao
+    {
         padding-top: 120px;
         padding-left: 50px;
     
     }
 
-    .descricaoFot{
+    .descricaoFot
+    {
         width: 50px;
         height: 200px;
         padding-left: 50px;
@@ -324,46 +305,40 @@ a
         flex-direction: row;
     }
 
-    
-
     .trailer
-{
-   position: relative;
-   width: 600px;
-   height: 400px;
-   /* top: 5px; */
-   margin: auto;
-   /* margin-bottom: 20px; */
-   /* padding-right: 20px; */
-   /* left: 30%;
-   right: 30%; */
-}
+    {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    }
 
-.trailerof{
-    width: 400px;
+    .trailerof
+    {
+        width: 400px;
+        display: flex;  
+        padding-top: 30px;
+        padding-left: 50px;
+    }
 
-    display: flex;
-    /* gap: 20px; */
-    
-    padding-top: 30px;
-    padding-left: 50px;
-}
-
-.descRick > img{
-    width: 350px;
-}
+    .descRick > img
+    {
+        width: 350px;
+    }
 }
 
 @media(min-width: 1024px)
 {
-    .descRick > img{
+    .descRick > img
+    {
         width: 500px;
     }
 }
 
 @media(min-width: 1280px)
 {
-    .descRick > img{
+    .descRick > img
+    {
         width: 800px;
     }
 
@@ -372,96 +347,3 @@ a
         font-size: 1.5rem;
     }
 }
-
-/* @media(max-width: 1024px)
-{   
-    body{
-        overflow-x: hidden;
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-    }
-
-    header{
-        width: 50%;
-        position: fixed;
-    }
-
-    .home1{
-        width: 1000px;
-        height: 100vh;
-        background-size: 1050px 900px;
-    } 
-
-    .trocaPagina{
-        margin-top: 600px;
-    }
-
-    .mouseAni{
-        margin-left: -100px;
-    }
-
-    .home2{
-        width: 970px;
-        height: 1050px;
-    }
-
-    .descRick{
-        display: flex;
-    }
-
-    .descRick > p{
-        font-size: small;
-        width: 200px;
-        height: 100px;
-        margin-bottom: 600px;
-
-    }
-
-    .trocaPages2{
-        margin-bottom: 500px;
-    }
-
-    .home3{
-        border: 10px solid red;
-        width: 970px;
-        height: 1050px;   
-    }
-
-    .trailer{
-        position: relative;
-        width: 700px;
-        height: 400px;
-        top: 100px;
-        left: 13%;
-    }
-
-    
-} 
-
-@media(max-width: 768px)
-{
-    .home1{
-        width: 950px;
-        height: 100%;
-        background-image: url("../assets/Background.jpg");
-    }  
-}
-
-@media(max-width: 425px)
-{
-    .home1{
-        width: 900px;
-        height: 100%;
-        background-image: url("../assets/Background.jpg");
-    } 
-}
-
-@media(max-width: 320px)
-{
-    .home1{
-        width: 900px;
-        height: 100%;
-        background-image: url("../assets/Background.jpg");
-    } 
-} */
